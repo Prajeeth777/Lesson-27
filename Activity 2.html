@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<hrml lang="en">
+<head>
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Array Mapping</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <script>
+        function multiply(a){
+            return a*10;
+        }
+        document.getElementById("p1").innerHTML=multiply(5);
+        var num=[13,0,77,34,3];
+        var newarr=num.map(multiply);
+        document.getElementById("p2").innerHTML="Original Array is "+num;
+        document.getElementById("p3").innerHTML="Mapped Array is "+newarr;
+    </script>
+</body>
+</hrml>
